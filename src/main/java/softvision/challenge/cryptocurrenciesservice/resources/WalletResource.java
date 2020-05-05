@@ -43,7 +43,7 @@ public class WalletResource {
     }
 
     @DeleteMapping("/delete/{walletId}")
-    public void updateWallet(@PathVariable("walletId") int walletId){
+    public void deleteWallet(@PathVariable("walletId") int walletId){
         walletService.deleteWallet(walletId);
     }
 }
