@@ -15,7 +15,7 @@ public class TransferResource {
     TransferService transferService;
 
 
-    @PutMapping("/transfer/origin-value={oValue}&" +
+    @PutMapping("/origin-value={oValue}&" +
             "origin-currency={oCurrency}&" +
             "origin-wallet={oWallet}&" +
             "dest-currency={dCurrency}&" +
