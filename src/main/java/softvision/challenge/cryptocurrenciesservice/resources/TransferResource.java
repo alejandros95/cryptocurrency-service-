@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import softvision.challenge.cryptocurrenciesservice.service.TransferService;
 
 @RestController
-@RequestMapping("/currency")
+@RequestMapping("/transfer")
 public class TransferResource {
 
     @Autowired
