@@ -32,10 +32,10 @@ public class WalletService {
         return wallet;
     }
 
-    public Wallet updateWallet(Wallet updatedWallet, int walletId) {
+    public Wallet updateWallet(Wallet updatedWallet) {
         for (int index = 0; index < wallets.size(); index++) {
             final Wallet wallet = wallets.get(index);
-            if(wallet.getId() == walletId) {
+            if(wallet.getId().equals(updatedWallet.getId())) {
                 wallets.set(index, updatedWallet);
                 return updatedWallet;
             }

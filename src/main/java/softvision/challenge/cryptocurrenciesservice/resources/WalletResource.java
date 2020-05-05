@@ -37,9 +37,9 @@ public class WalletResource {
         return walletService.addWallet(wallet);
     }
 
-    @PutMapping("/update/{walletId}")
-    public Wallet updateWallet(@RequestBody Wallet wallet, @PathVariable("walletId") int walletId){
-        return walletService.updateWallet(wallet, walletId);
+    @PutMapping("/update")
+    public Wallet updateWallet(@RequestBody Wallet wallet){
+        return walletService.updateWallet(wallet);
     }
 
     @DeleteMapping("/delete/{walletId}")
